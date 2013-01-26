@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Template to display a view as a table.
@@ -18,6 +17,7 @@
  * @ingroup views_templates
  */
 ?>
+
 <table <?php if ($classes) { print 'class="'. $classes . '" '; } ?><?php print $attributes; ?>>
   <?php if (!empty($title)) : ?>
     <caption><?php print $title; ?></caption>
