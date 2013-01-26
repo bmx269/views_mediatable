@@ -1,0 +1,12 @@
+name = MediaTable Views Plugin
+description = Integrate the MediaTable library with views for responsive table layouts.
+core = 7.x
+package = Views
+
+dependencies[] = views
+
+files[] = views_mediatable.install
+files[] = views_mediatable.module
+files[] = views/views-mediatable-table-view.tpl.php
+files[] = views/views_mediatable.views.inc
+files[] = views/views_mediatable_style_plugin.inc
