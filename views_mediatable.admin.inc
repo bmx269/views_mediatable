@@ -34,7 +34,7 @@ function theme_views_mediatable_style_plugin_table($variables) {
       'align' => 'center',
     ),
     array(
-      'data' => t('Responsive'),
+      'data' => t('Media Table Display Options'),
       'align' => 'center',
     ),
   );

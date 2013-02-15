@@ -33,14 +33,20 @@ class views_mediatable_plugin_style_table extends views_plugin_style_table {
       // The $id of the column for dependency checking.
       $id = 'edit-style-options-columns-' . $safe;
 
+      if (!empty($this->options['info'][$field]['responsive'])) {
+        $media_option_default = $this->options['info'][$field]['responsive'];
+      } else {
+        $media_option_default = 'presist';
+      }
+
       $form['info'][$field]['responsive'] = array(
         '#type' => 'select',
         '#options' => array(
-          'persist' => 'Always show',
-          'essential' => 'Optional; show on mobile',
-          'optional' => 'Optional; don\'t show on mobile',
+          'persist' => 'Always shown',
+          'essential' => 'Shown with option to hide',
+          'optional' => 'Hide in smaller resolution unless overridden',
         ),
-        '#default_value' => !empty($this->options['info'][$field]['responsive']),
+        '#default_value' => $media_option_default,
         '#dependency' => array($id => array($field)),
       );
     }
