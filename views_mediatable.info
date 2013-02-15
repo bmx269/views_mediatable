@@ -4,6 +4,7 @@ core = 7.x
 package = Views
 
 dependencies[] = views
+dependencies[] = libraries
 
 files[] = views_mediatable.install
 files[] = views_mediatable.module
