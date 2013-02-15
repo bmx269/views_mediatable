@@ -3,30 +3,28 @@
 }
 
 .mediaTableWrapperWithMenu {
-	padding-top:3em;
+	padding-top: 3em;
 }
 
 .mediaTableMenuClosed ul {
-	display:none;
+	display: none;
 }
 
 .mediaTableMenu {
-	position:absolute;
-	top:0;
-	right:0;
-	
-	background: #fff;
-	border:1px solid #aaa;
-	border-radius:5px;
-	overflow:hidden;
-	box-shadow:2px 2px 4px #ddd;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .mediaTableMenu a {
 	display: block;
 	background: #ddd;
-	padding:0.5em;
-	cursor:pointer;
+	padding: 0.5em;
+	cursor: pointer;
 	
 	-webkit-border-top-right-radius: 5px;
 	-webkit-border-top-left-radius: 5px;
@@ -38,12 +36,13 @@
 }
 
 .mediaTableWrapper .mediaTableMenu ul {
-	margin:0;
-	padding:0 0.5em;
+	background: #FFF;
+	margin: 0;
+	padding: 0 0.5em;
 }
 
 .mediaTableMenuClosed a {
-	border-radius:5px;
+	border-radius: 5px;
 }
 
 .mediaTableMenu ul li {
@@ -52,10 +51,62 @@
 }
 
 .mediaTableMenu ul li label {
-	cursor:pointer;
+	cursor: pointer;
 	padding-left: 20px;
 }
 .mediaTableMenu ul li input {
 	position: absolute;
 	top: 5px;
+}
+
+
+
+.activeMediaTable th,
+.activeMediaTable td {
+	display: none;
+}
+
+.activeMediaTable th.essential,
+.activeMediaTable td.essential {
+	display: table-cell;
+	_display: block; /* IE6 Hack */
+}
+/* IE7 Hack */
+*+html .activeMediaTable th.essential,
+*+html .activeMediaTable td.essential {
+	display:block;
+}
+
+/* -----[[     B R E A K      P O I N T S     ]]------------ */
+
+@media screen and (min-width: 768px) {
+	
+	.activeMediaTable th.optional,
+	.activeMediaTable td.optional {
+		display: table-cell;
+		_display: block; /* IE6 Hack */
+	}
+	
+	/* IE7 Hack */
+	*+html .activeMediaTable th.optional,
+	*+html .activeMediaTable td.optional {
+		display: block;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.activeMediaTable th,
+	.activeMediaTable td {
+		display: table-cell;
+		_display: block; /* IE6 Hack */
+	}
+	
+	/* IE7 Hack */
+	*+html .activeMediaTable th,
+	*+html .activeMediaTable td {
+		display: block;
+	}
+	
 }

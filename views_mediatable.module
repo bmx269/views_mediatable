@@ -15,7 +15,7 @@ function views_mediatable_library() {
     'version' => '',
     // @todo support libraries API.
     'js' => array(
-      libraries_get_path('mediatable') . '/jquery.mediaTable.js' => array(),
+      libraries_get_path('MediaTable') . '/jquery.mediaTable.js' => array(),
     ),
     'css' => array(
       drupal_get_path('module', 'views_mediatable') . '/css/views_mediatable.css' => array(
