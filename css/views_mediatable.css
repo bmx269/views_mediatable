@@ -77,10 +77,9 @@
 	display:block;
 }
 
-/* -----[[     B R E A K      P O I N T S     ]]------------ */
+/* ----- Media Queries ------------ */
 
 @media screen and (min-width: 768px) {
-	
 	.activeMediaTable th.optional,
 	.activeMediaTable td.optional {
 		display: table-cell;
@@ -96,7 +95,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-	
 	.activeMediaTable th,
 	.activeMediaTable td {
 		display: table-cell;
