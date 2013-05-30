@@ -6,7 +6,7 @@
  */
 
 /**
- * Implements of hook_library().
+ * Implements hook_library().
  */
 function views_mediatable_library() {
   $libraries['mediatable'] = array(
@@ -28,7 +28,7 @@ function views_mediatable_library() {
 }
 
 /**
- * Implements of hook_views_api().
+ * Implements hook_views_api().
  */
 function views_mediatable_views_api() {
   return array(
@@ -38,7 +38,7 @@ function views_mediatable_views_api() {
 }
 
 /**
- * Implements of hook_theme().
+ * Implements hook_theme().
  */
 function views_mediatable_theme() {
   return array(
@@ -87,6 +87,7 @@ function template_preprocess_views_mediatable_view(&$vars) {
           }
           $vars['header_classes'][$field] .= 'essential';
           break;
+
         case 'optional':
           if ($vars['header_classes'][$field]) {
             $vars['header_classes'][$field] .= ' ';
@@ -98,4 +99,6 @@ function template_preprocess_views_mediatable_view(&$vars) {
   }
   drupal_add_library('views_mediatable', 'mediatable');
   drupal_add_js(drupal_get_path('module', 'views_mediatable') . '/js/responsive_table.js');
+}
+js');
 }

@@ -4,12 +4,6 @@
  * Installation file for Views MediaTable module.
  */
 
-/**
- * Implements hook_install().
- */
-function views_mediatable_install() {
-
-}
 
 /**
  * Implements hook_requirements().
@@ -32,6 +26,11 @@ function mediatable_requirements($phase) {
       '!readme' => url(drupal_get_path('module', 'mediatable') . '/README.txt'))
     );
     $requirements['mediatable']['severity'] = REQUIREMENT_ERROR;
+  }
+
+  return $requirements;
+}
+['mediatable']['severity'] = REQUIREMENT_ERROR;
   }
 
   return $requirements;
