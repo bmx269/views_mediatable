@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * This is where all of the logic is kept for determining how to a views table
+ * This is where all of the logic is kept for determining how to a Views table
  * in a responsive table display.
  */
 
@@ -13,7 +13,7 @@ function views_mediatable_library() {
     'title' => 'MediaTable',
     'website' => 'http://consulenza-web.com/jquery/MediaTable/',
     'version' => '',
-    // @todo support libraries API.
+
     'js' => array(
       libraries_get_path('MediaTable') . '/jquery.mediaTable.js' => array(),
     ),
@@ -53,7 +53,7 @@ function views_mediatable_theme() {
 }
 
 /**
- * Theme preprocess function for views-mediatable-mediatable-view.tpl.php
+ * Theme preprocess function for views-mediatable-mediatable-view.tpl.php.
  */
 function template_preprocess_views_mediatable_view(&$vars) {
   template_preprocess_views_view_table($vars);
