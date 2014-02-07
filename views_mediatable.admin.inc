@@ -1,11 +1,11 @@
 <?php
 /**
  * @file
- * blah.
+ * This is where all of the form settings are kept for the Views display type.
  */
 
 /**
- * Theme the form for the table style plugin
+ * Theme the form for the table style plugin.
  */
 function theme_views_mediatable_style_plugin_table($variables) {
   $form = $variables['form'];
@@ -34,7 +34,7 @@ function theme_views_mediatable_style_plugin_table($variables) {
       'align' => 'center',
     ),
     array(
-      'data' => t('MediaTable Display Options'),
+      'data' => t('MediaTable Options'),
       'align' => 'center',
     ),
   );
@@ -86,4 +86,6 @@ function theme_views_mediatable_style_plugin_table($variables) {
   $output .= theme('table', array('header' => $header, 'rows' => $rows));
   $output .= drupal_render_children($form);
   return $output;
+}
+tput;
 }

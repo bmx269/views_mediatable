@@ -35,16 +35,18 @@ class views_mediatable_plugin_style_table extends views_plugin_style_table {
 
       if (!empty($this->options['info'][$field]['responsive'])) {
         $media_option_default = $this->options['info'][$field]['responsive'];
-      } else {
+      }
+
+      else {
         $media_option_default = 'presist';
       }
 
       $form['info'][$field]['responsive'] = array(
         '#type' => 'select',
         '#options' => array(
-          'persist' => 'Always shown',
-          'essential' => 'Shown with option to hide',
-          'optional' => 'Hide in smaller resolution unless overridden',
+          'persist' => 'Always Shown',
+          'essential' => 'Shown with Option to Hide',
+          'optional' => 'Hide on Smaller Resolutions with Option to Show',
         ),
         '#default_value' => $media_option_default,
         '#dependency' => array($id => array($field)),

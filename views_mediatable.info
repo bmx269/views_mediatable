@@ -1,5 +1,5 @@
-name = MediaTable Views Plugin
-description = Integrate the MediaTable library with views for responsive table layouts.
+name = Views MediaTable
+description = Integrate the MediaTable library with Views for responsive table layouts, and more.
 core = 7.x
 package = Views
 

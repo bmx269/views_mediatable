@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * This is where all of the logic is kept for determining how to a views table
+ * This is where all of the logic is kept for determining how to a Views table
  * in a responsive table display.
  */
 
 /**
- * Implements of hook_library().
+ * Implements hook_library().
  */
 function views_mediatable_library() {
   $libraries['mediatable'] = array(
     'title' => 'MediaTable',
     'website' => 'http://consulenza-web.com/jquery/MediaTable/',
     'version' => '',
-    // @todo support libraries API.
+
     'js' => array(
       libraries_get_path('MediaTable') . '/jquery.mediaTable.js' => array(),
     ),
@@ -28,7 +28,7 @@ function views_mediatable_library() {
 }
 
 /**
- * Implements of hook_views_api().
+ * Implements hook_views_api().
  */
 function views_mediatable_views_api() {
   return array(
@@ -38,7 +38,7 @@ function views_mediatable_views_api() {
 }
 
 /**
- * Implements of hook_theme().
+ * Implements hook_theme().
  */
 function views_mediatable_theme() {
   return array(
@@ -53,7 +53,7 @@ function views_mediatable_theme() {
 }
 
 /**
- * Theme preprocess function for views-mediatable-mediatable-view.tpl.php
+ * Theme preprocess function for views-mediatable-mediatable-view.tpl.php.
  */
 function template_preprocess_views_mediatable_view(&$vars) {
   template_preprocess_views_view_table($vars);
@@ -87,6 +87,7 @@ function template_preprocess_views_mediatable_view(&$vars) {
           }
           $vars['header_classes'][$field] .= 'essential';
           break;
+
         case 'optional':
           if ($vars['header_classes'][$field]) {
             $vars['header_classes'][$field] .= ' ';
@@ -97,5 +98,7 @@ function template_preprocess_views_mediatable_view(&$vars) {
     }
   }
   drupal_add_library('views_mediatable', 'mediatable');
-  drupal_add_js(drupal_get_path('module', 'views_mediatable') . '/js/callscript.js');
+  drupal_add_js(drupal_get_path('module', 'views_mediatable') . '/js/responsive_table.js');
+}
+js');
 }

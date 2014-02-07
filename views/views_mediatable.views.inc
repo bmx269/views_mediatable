@@ -14,8 +14,8 @@ function views_mediatable_views_plugins() {
     'module' => 'views_mediatable',
     'style' => array(
       'mediatable' => array(
-        'title' => t('Views MediaTable Table'),
-        'help' => t('Adds responsive options to a table display.'),
+        'title' => t('MediaTable Table'),
+        'help' => t('Adds the ability to have responsive options to the table display.'),
         'path' => $theme_path,
         'theme path' => $theme_path,
         'handler' => 'views_mediatable_plugin_style_table',
