@@ -30,3 +30,7 @@ Once the module is properly installed. A new views format "Views MediaTable Tabl
 
 3. Hide on Smaller Resolutions with Option to Show - A column with this setting will show by default in wider screen sizes (768px or higher) and will hide automatically for all screen sizes under 786px. However, the user have the option to show the column even in smaller screen sizes.
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bmx269/views_mediatable/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
